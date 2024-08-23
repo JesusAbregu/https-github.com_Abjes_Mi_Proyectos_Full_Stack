@@ -1,0 +1,11 @@
+ProjectMate/
+├── backend/
+│   ├── server.js
+│   └── package.json
+└── frontend/
+    ├── src/
+    │   ├── App.js
+    │   ├── redux/
+    │   │   └── projectSlice.js
+    │   └── index.js
+    └── package.json

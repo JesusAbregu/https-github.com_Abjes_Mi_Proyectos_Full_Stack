@@ -1,0 +1,10 @@
+ShopEase/
+├── backend/
+│   ├── app.py
+│   └── requirements.txt
+└── frontend/
+    ├── src/
+    │   ├── App.vue
+    │   └── store/
+    │       └── index.js
+    └── package.json
