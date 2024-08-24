@@ -8,3 +8,170 @@ ShopEase/
     │   └── store/
     │       └── index.js
     └── package.json
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form label {
+        margin: 0.5rem 0;
+    }
+    
+    form input {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    form button {
+        padding: 0.5rem;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #555;
+    }
+    /* Ejemplo de media query en CSS */
+@media (max-width: 768px) {
+    .container {
+      width: 100%;
+    }
+  }
+  /* Ejemplo de estilo coherente */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header, .footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+  }
+  
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  your-repo/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── src/
+├── README.md
+└── ...
+# .github/workflows/ci.yml
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests
+      run: npm test
+      your-repo/
+      ├── .travis.yml
+      ├── src/
+      ├── README.md
+      └── ...
+      your-repo/
+      ├── .travis.yml
+      ├── src/
+      ├── README.md
+      └── ...
+      your-repo/
+├── k8s/
+│   ├── deployment.yml
+│   └── service.yml
+└── src/
+# k8s/deployment.yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app
+        image: my-app:latest
+        ports:
+        - containerPort: 80
+        your-repo/
+        ├── app.json
+        ├── src/
+        └── README.md
+        
