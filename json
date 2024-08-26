@@ -1,0 +1,11 @@
+"scripts": {
+  "start": "node src/index.js"
+}
+{
+  "name": "Alice",
+  "age": 25,
+  "city": "Los Angeles"
+}
+{
+  "message": "Hello Vue!"
+}
