@@ -1,0 +1,14 @@
+{
+    "name": "my-app",
+    "description": "A simple app",
+    "repository": "https://github.com/user/repo",
+    "logo": "https://example.com/logo.png",
+    "keywords": ["node", "express"],
+    "env": {
+      "NODE_ENV": {
+        "description": "Node environment",
+        "value": "production"
+      }
+    }
+  }
+  
