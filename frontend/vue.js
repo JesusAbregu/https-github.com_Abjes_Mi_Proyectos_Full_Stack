@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <!-- contenido del componente -->
+    <h1>Hello Vue!</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-};
+  name: 'App'
+}
 </script>
 
-<style src="./style.css"></style>
+<style>
+/* Estilos aquí */
+</style>

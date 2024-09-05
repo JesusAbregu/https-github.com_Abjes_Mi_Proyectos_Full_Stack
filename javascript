@@ -1,30 +1,28 @@
-import HelloWorld from '@/components/HelloWorld.vue';
-import { shallowMount } from '@vue/test-utils';
-import Vue from 'vue';
+// frontend/src/main.js
+import Vue, { createApp } from 'vue';
+import VueRouter from 'vue-router';
 import App from './App.vue';
-import router from './router'; // Si usas Vue Router
-import store from './store'; // Si usas Vuex
+import About from './components/About.vue';
+import Contact from './components/Contact.vue';
+import Home from './components/Home.vue';
 
 Vue.config.productionTip = false;
+Vue.use(VueRouter);
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app');
+const routes = [
+  { path: '/', component: Home },
+  { path: '/about', component: About },
+  { path: '/contact', component: Contact }
+];
 
-describe('HelloWorld.vue', () => {
-  it('renders props.msg when passed', () => {
-    const msg = 'new message';
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg }
-    });
-    expect(wrapper.text()).toMatch(msg);
-  });
+const router = new VueRouter({
+  routes
 });
-
-Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+  router
+}).$mount('#app');
+
+createApp(App).mount('#app');
+
