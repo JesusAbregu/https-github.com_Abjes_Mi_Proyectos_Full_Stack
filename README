@@ -1,6 +1,7 @@
-# Mi Proyecto
-
+# Mi Proyecto Full Stack
+Este proyecto es una aplicación full stack que realiza [describe la funcionalidad o propósito del proyecto].
 ## Instalación
 
-```bash
-npm install
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/usuario/repo.git

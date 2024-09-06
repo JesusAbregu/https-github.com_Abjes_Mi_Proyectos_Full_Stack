@@ -11,4 +11,5 @@ frontend/
 ├── .env
 ├── .gitignore
 ├── package.json
-└── vue.config.js (opcional)
+└── vue.config.js
+

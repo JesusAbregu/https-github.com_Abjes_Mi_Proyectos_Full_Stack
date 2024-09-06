@@ -1,17 +1,10 @@
-{
-    "sketch": "MiProyecto.ino",
-    "board": "arduino:avr:uno",
-    "port": "COM3"
-  }
-  mi-proyecto/
+Mi_Proyectos_Full_Stack/
 ├── node_modules/
 ├── public/
+│   └── index.html
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── views/
-│   └── main.js
-├── .gitignore
+│   ├── main.js
+│   └── App.vue
 ├── package.json
-├── vue.config.js (si existe)
-└── README.md
+└── vue.config.js (si es necesario)
+

@@ -1,0 +1,14 @@
+Mi_Proyectos_Full_Stack/
+├── node_modules/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.vue
+│   └── main.js
+├── .gitignore
+├── babel.config.js
+├── package.json
+├── package-lock.json
+└── README.md

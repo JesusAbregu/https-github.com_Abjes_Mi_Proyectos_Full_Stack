@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio -->
+    <section id="inicio">
+        <h1>Bienvenido a Mi Portafolio</h1>
+        <p>Desarrollador Full Stack apasionado por crear experiencias web interactivas y dinámicas.</p>
+        <button onclick="window.location.href='#contacto'">¡Contáctame!</button>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyecto">
+            <img src="images/proyecto1.png" alt="Proyecto 1">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto.</p>
+        </div>
+        <div class="proyecto">
+            <img src="images/proyecto2.png" alt="Proyecto 2">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto.</p>
+        </div>
+        <!-- Agrega más proyectos aquí -->
+    </section>
+
+    <!-- Sección de blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>Artículo de Ejemplo</h3>
+            <p>Descripción breve del artículo.</p>
+            <a href="#">Leer más</a>
+        </article>
+        <!-- Agrega más artículos aquí -->
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contáctame</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo electrónico" required>
+            <textarea placeholder="Tu mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,8 @@
+# Escritura
+with open('archivo.txt', 'w') as file:
+    file.write('Hola, mundo!')
+
+# Lectura
+with open('archivo.txt', 'r') as file:
+    contenido = file.read()
+    print(contenido)

@@ -1,0 +1,27 @@
+{
+  "name": "mi_proyectos_full_stack",
+  "version": "1.0.0",
+  "description": "Bienvenidos a mi proyecto de full stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "build": "echo \"Build script is not implemented yet\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react": "^7.35.2",
+    "globals": "^15.9.0",
+    "jest": "^29.7.0",
+    "mocha": "^10.7.3",
+    "typescript-eslint": "^8.4.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
+module.exports = {
+  testEnvironment: 'node',
+  testMatch: ['**/__tests__/**/*.js?(x)', '**/?(*.)+(spec|test).js?(x)'],
+};
